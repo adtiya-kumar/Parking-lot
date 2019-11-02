@@ -1,10 +1,8 @@
 package com.justpark.models.parking;
 
-public abstract class Gate {
-    private long uid; // unique id
-    // auto incr -> primary key
-    // memory
-    private static long NEW_UID = 0;
+import com.justpark.models.DBObject;
+
+public abstract class Gate extends DBObject {
 
     private String gateName;
 
@@ -12,7 +10,11 @@ public abstract class Gate {
 
     abstract void close();
 
-    public Gate() {
-        this.uid = NEW_UID++;
+    public String getGateName() {
+        return gateName;
+    }
+
+    public void setGateName(String gateName) {
+        this.gateName = gateName;
     }
 }
