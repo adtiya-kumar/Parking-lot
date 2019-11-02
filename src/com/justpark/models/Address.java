@@ -96,4 +96,11 @@ public class Address {
             return new Address(this);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Address [city=" + city + ", country=" + country + ", state=" + state + ", streetAddress="
+                + streetAddress + ", zipCode=" + zipCode + "]";
+    }
+
 }
