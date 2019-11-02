@@ -6,11 +6,13 @@ public class Person extends DBObject {
     private String name;
     private Address address;
     private String phoneNumber;
-    private final Account account;
+    private Account account;
 
-    public Person(String name, Account account) {
-        this.name = name;
-        this.account = account;
+    private Person(Builder builder) {
+        setName(builder.name);
+        setAddress(builder.address);
+        setPhoneNumber(builder.phoneNumber);
+        account = builder.account;
     }
 
     public String getName() {
@@ -39,5 +41,40 @@ public class Person extends DBObject {
 
     public Account getAccount() {
         return account;
+    }
+
+    public static final class Builder {
+        private String name;
+        private Address address;
+        private String phoneNumber;
+        private Account account;
+
+        public Builder(String name) {
+            this.name = name;
+        }
+
+        public Builder address(Address val) {
+            address = val;
+            return this;
+        }
+
+        public Builder phoneNumber(String val) {
+            phoneNumber = val;
+            return this;
+        }
+
+        public Builder account(Account val) {
+            account = val;
+            return this;
+        }
+
+        public Person build() {
+            return new Person(this);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", phoneNumber=" + phoneNumber + "]";
     }
 }
