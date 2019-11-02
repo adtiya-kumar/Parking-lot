@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.justpark.models.electronics.CustomerInfoPortal;
 import com.justpark.models.electronics.DisplayBoard;
-import com.justpark.models.spots.Spot;
+import com.justpark.models.parking.spots.Spot;
 
 public class Floor {
     private CustomerInfoPortal customerInfoPortal;
