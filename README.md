@@ -1,5 +1,5 @@
 # Just Park
-Parking lot machine coding.
+Just another Parking lot implementation.
 
 ## Requirements
 
