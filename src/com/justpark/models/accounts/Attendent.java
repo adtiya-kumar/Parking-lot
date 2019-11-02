@@ -21,4 +21,9 @@ public class Attendent extends Account implements IssuesTicket, PaymentsEnabled 
 
     }
 
+    @Override
+    public void processPayment() {
+
+    }
+
 }

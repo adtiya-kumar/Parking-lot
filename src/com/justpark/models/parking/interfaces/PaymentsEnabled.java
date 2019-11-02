@@ -4,4 +4,6 @@ import com.justpark.models.parking.Ticket;
 
 public interface PaymentsEnabled {
     public void processTicket(Ticket ticket);
+
+    public void processPayment();
 }

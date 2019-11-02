@@ -10,4 +10,8 @@ public class CustomerInfoPortal extends Electronics implements PaymentsEnabled {
 
     }
 
+    @Override
+    public void processPayment() {
+    }
+
 }

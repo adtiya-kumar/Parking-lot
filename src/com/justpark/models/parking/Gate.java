@@ -54,4 +54,9 @@ public class Gate extends DBObject implements PaymentsEnabled {
     public void processTicket(Ticket ticket) {
 
     }
+
+    @Override
+    public void processPayment() {
+
+    }
 }
