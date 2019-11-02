@@ -2,13 +2,17 @@ package com.justpark.models.parking;
 
 import com.justpark.models.DBObject;
 
-public abstract class Gate extends DBObject {
+public class Gate extends DBObject {
 
     private String gateName;
 
-    abstract void open();
+    void open() {
 
-    abstract void close();
+    };
+
+    void close() {
+
+    };
 
     public String getGateName() {
         return gateName;
