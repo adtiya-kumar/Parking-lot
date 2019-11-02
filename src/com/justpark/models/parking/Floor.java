@@ -12,6 +12,13 @@ public class Floor {
     private DisplayBoard displayBoard;
     private String name;
 
+    public Floor(String name) {
+        this.name = name;
+        displayBoard = new DisplayBoard();
+        spots = new ArrayList<>();
+        customerInfoPortal = new CustomerInfoPortal();
+    }
+
     public CustomerInfoPortal getCustomerInfoPortal() {
         return customerInfoPortal;
     }
