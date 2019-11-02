@@ -1,5 +1,7 @@
 package com.justpark.models.parking.interfaces;
 
-public interface PaymentsEnabled {
+import com.justpark.models.parking.Ticket;
 
+public interface PaymentsEnabled {
+    public void processTicket(Ticket ticket);
 }

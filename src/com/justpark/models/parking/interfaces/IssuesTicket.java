@@ -1,5 +1,7 @@
 package com.justpark.models.parking.interfaces;
 
-public interface IssuesTicket {
+import com.justpark.models.parking.Ticket;
 
+public interface IssuesTicket {
+    public Ticket giveTicket();
 }
