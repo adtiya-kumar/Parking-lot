@@ -1,3 +1,6 @@
+# Just Park
+Parking lot machine coding.
+
 ## Requirements
 
 1. The parking lot should have multiple floors where customers can park their cars.
