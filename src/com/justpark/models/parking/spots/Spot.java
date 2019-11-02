@@ -34,4 +34,9 @@ public abstract class Spot {
     public boolean isFree() {
         return this.status.equals(SpotStatus.FREE);
     }
+
+    @Override
+    public String toString() {
+        return "Spot{" + "type=" + type + ", status=" + status + ", vehicle=" + vehicle + '}';
+    }
 }
