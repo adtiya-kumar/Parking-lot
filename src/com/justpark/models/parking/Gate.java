@@ -6,6 +6,7 @@ public class Gate extends DBObject {
 
     private String gateName;
     private GateType type;
+    private Attendent attendent;
 
     void open() {
 
