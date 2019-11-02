@@ -1,5 +1,5 @@
 package com.justpark.models.spots;
 
-public class MotorcylcleSpot {
+public class MotorcycleSpot {
 
 }
