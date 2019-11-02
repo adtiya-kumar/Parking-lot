@@ -6,12 +6,21 @@ import com.justpark.exceptions.SpotAlreadyFreeException;
 import com.justpark.models.vehicles.Vehicle;
 
 public abstract class Spot {
+    private String title;
     private final SpotType type;
     private SpotStatus status;
     private Vehicle vehicle;
 
     public SpotType getType() {
         return type;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public Vehicle getVehicle() {
@@ -58,6 +67,6 @@ public abstract class Spot {
 
     @Override
     public String toString() {
-        return "Spot{" + "type=" + type + ", status=" + status + ", vehicle=" + vehicle + '}';
+        return "Spot [status=" + status + ", title=" + title + ", type=" + type + "]";
     }
 }
