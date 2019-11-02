@@ -1,6 +1,6 @@
 package com.justpark.models.accounts;
 
-import com.justpark.models.people.Person;
+import com.justpark.models.Person;
 
 public abstract class Account {
     private String username;

@@ -1,9 +1,9 @@
 package com.justpark.models.accounts;
 
+import com.justpark.models.Person;
 import com.justpark.models.parking.Ticket;
 import com.justpark.models.parking.interfaces.IssuesTicket;
 import com.justpark.models.parking.interfaces.PaymentsEnabled;
-import com.justpark.models.people.Person;
 
 public class Attendent extends Account implements IssuesTicket, PaymentsEnabled {
 

@@ -1,9 +1,9 @@
 package com.justpark.models.accounts;
 
+import com.justpark.models.Person;
 import com.justpark.models.electronics.Electronics;
 import com.justpark.models.parking.Floor;
 import com.justpark.models.parking.Gate;
-import com.justpark.models.people.Person;
 import com.justpark.models.parking.spots.Spot;
 
 public class Admin extends Account {

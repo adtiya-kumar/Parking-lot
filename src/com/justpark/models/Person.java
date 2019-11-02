@@ -1,7 +1,5 @@
-package com.justpark.models.people;
+package com.justpark.models;
 
-import com.justpark.models.Address;
-import com.justpark.models.DBObject;
 import com.justpark.models.accounts.Account;
 
 public class Person extends DBObject {
