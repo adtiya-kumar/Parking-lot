@@ -35,8 +35,13 @@ public class Floor {
         this.customerInfoPortal = customerInfoPortal;
     }
 
-    public List<Spot> getSpots() {
-        return spots;
+    public DisplayBoard getDisplayBoard() {
+        return displayBoard;
+    }
+
+    public void setDisplayBoard(DisplayBoard displayBoard) {
+        this.displayBoard = displayBoard;
+    }
     }
 
     public void setSpots(List<Spot> spots) {
