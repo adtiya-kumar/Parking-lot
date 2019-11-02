@@ -1,4 +1,15 @@
 package com.justpark.models.electronics;
 
-public class AutoExitPanel extends Electronics {
+import com.justpark.models.parking.Ticket;
+import com.justpark.models.parking.interfaces.PaymentsEnabled;
+
+public class AutoExitPanel extends Electronics implements PaymentsEnabled {
+
+    @Override
+    public void processTicket(Ticket ticket) {
+    }
+
+    @Override
+    public void processPayment() {
+    }
 }
