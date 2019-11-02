@@ -33,3 +33,6 @@ Just another Parking lot implementation.
 1. Credit card payment: To pay the ticket fee with credit card.
 1. Cash payment: To pay the parking ticket through cash.
 1. Add/Modify parking rate: To allow admin to add or modify the hourly parking rate.
+
+## Acknowledgements
+Thanks to [Pragy Agarwal](https://github.com/AgarwalPragy)
