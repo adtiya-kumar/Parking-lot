@@ -31,4 +31,7 @@ public abstract class Spot {
         this.status = status;
     }
 
+    public boolean isFree() {
+        return this.status.equals(SpotStatus.FREE);
+    }
 }
