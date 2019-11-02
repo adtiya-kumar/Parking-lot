@@ -5,6 +5,7 @@ import com.justpark.models.DBObject;
 public class Gate extends DBObject {
 
     private String gateName;
+    private GateType type;
 
     void open() {
 
@@ -20,5 +21,13 @@ public class Gate extends DBObject {
 
     public void setGateName(String gateName) {
         this.gateName = gateName;
+    }
+
+    public GateType getType() {
+        return type;
+    }
+
+    public void setType(GateType type) {
+        this.type = type;
     }
 }
