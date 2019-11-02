@@ -57,7 +57,7 @@ public abstract class Spot {
     }
 
     public Vehicle unPark() throws SpotAlreadyFreeException {
-        if (!status.equals(SpotStatus.OCCUPIED))
+        if (this.isFree())
             throw new SpotAlreadyFreeException(this.toString() + " is already free!");
         Vehicle vehicle = this.vehicle;
         this.vehicle = null;
