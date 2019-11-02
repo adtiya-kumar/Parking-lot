@@ -8,11 +8,51 @@ public class Address {
     private String streetAddress;
 
     private Address(Builder builder) {
-        country = builder.country;
-        state = builder.state;
-        city = builder.city;
-        zipCode = builder.zipCode;
-        streetAddress = builder.streetAddress;
+        setCountry(builder.country);
+        setState(builder.state);
+        setCity(builder.city);
+        setZipCode(builder.zipCode);
+        setStreetAddress(builder.streetAddress);
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    private void setState(String state) {
+        this.state = state;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    private void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    private void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    public String getStreetAddress() {
+        return streetAddress;
+    }
+
+    private void setStreetAddress(String streetAddress) {
+        this.streetAddress = streetAddress;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    private void setCountry(String country) {
+        this.country = country;
     }
 
     public static final class Builder {
